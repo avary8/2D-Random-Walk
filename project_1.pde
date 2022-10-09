@@ -24,9 +24,11 @@ void draw() {
     } else {
       ites = walk.iters;
     }
-    for (int i = 0; i < ites; i++) {
+    int i = 0;
+    while (i < walk.iters && i < ites) {
       walk.step();
       walk.display();
+      i++;
     }
   }
 }
